@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Cargar el archivo JSON con jQuery, agregando un parámetro timestamp para evitar la caché
-    $.getJSON('https://q6krhrkxdeajajzxqzwg1a.on.drv.tw/5%C2%B0A/ypf/datos.json?timestamp=' + new Date().getTime(), function(data) {
+    $.getJSON('https://matias849.github.io/proyecto-git/YPF-sitio/datos.json?timestamp=' + new Date().getTime(), function(data) {
         const informacion = data.informacion; // Accedemos al array "informacion"
         const contenidoDiv = $('#contenido');
 
