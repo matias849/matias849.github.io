@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    // Cargar el archivo JSON local con jQuery, agregando un parámetro timestamp para evitar la caché
-    $.getJSON('datos.json?timestamp=' + new Date().getTime(), function(data) {
+    // Cargar el archivo JSON con jQuery, agregando un parámetro timestamp para evitar la caché
+    $.getJSON('https://q6krhrkxdeajajzxqzwg1a.on.drv.tw/5%C2%B0A/ypf/datos.json?timestamp=' + new Date().getTime(), function(data) {
         const informacion = data.informacion; // Accedemos al array "informacion"
         const contenidoDiv = $('#contenido');
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
     }).fail(function() {
         console.error('Error al cargar el JSON.');
     });
-});
+
 
     // Carrusel
     let currentIndex = 0;
