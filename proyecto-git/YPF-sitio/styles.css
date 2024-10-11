@@ -1,0 +1,233 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #004080, #0099cc);/* Esto será inicial pero cambiará al hacer scroll */
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    scroll-behavior: smooth;
+    transition: background-color 1s ease; /* Para suavizar la transición */
+}
+
+header {
+    background: rgba(0, 51, 102, 0.8);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    letter-spacing: 1px;
+}
+
+/* Animación de secciones */
+/* section {
+    padding: 40px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    background: rgba(0, 51, 102, 0.85);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 750px;
+} */
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    opacity: 1;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    background: rgba(0, 51, 102, 0.85);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 750px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: rgba(0, 51, 102, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Fondo visual */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh; 
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-repeat: repeat; 
+    opacity: 0.3; /* Esto no cambia con el scroll */
+    z-index: -1;
+}
+/* Carrusel */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    height: 400px; /* Fija la altura de las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* espacio de prueba */
+
+/* Loader Container */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 51, 102, 0.9); /* Color de fondo del loader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#message {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    background-color: rgba(0, 51, 102, 0.8);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.1s ease; /* Animación de opacidad */
+}
+
+#indicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto auto auto;
+
+}
+#indicacion img{width: 100px;}
+#indicacion p{font-size: 20px;}
+
+.info-item {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Diseño para móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px 10px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 15px;
+        margin: 15px 15px;
+    }
+
+    .carousel {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 0;
+    }
+}
