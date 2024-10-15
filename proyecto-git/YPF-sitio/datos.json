@@ -1,39 +1,20 @@
 {
     "informacion": [
       {
-        "subtitulo": "hola lio",
-        "texto": "YPF fue fundada en 1922 y ha sido fundamental en el desarrollo energético de Argentina."
+        "subtitulo": "Historia de YPF",
+        "texto": "El presidente de la Nación, José Figueroa Alcorta, decretó la posesión del yacimiento por parte del Estado, y se crearon La Dirección General de Explotación de Comodoro Rivadavia en 1911 y en 1922 la Dirección General de Yacimientos Petrolíferos Fiscales.<br>
+A través de YPF el Estado impulsó el desarrollo de las actividades productivas y el hallazgo del 90% de las reservas de gas y petróleo en nuestro territorio. 
+"
       },
       {
-        "subtitulo": "Nuestro Negocio",
-        "texto": "Comprometidos con la exploración, producción y distribución de energía sostenible."
+        "subtitulo": "Privatización de YPF
+",
+        "texto": "En 1989 bajo la Ley de Reforma del Estado se Privatización las empresas públicas del Estado Argentino.<br>
+Con la Privatización YPF  la empresa quedó en manos de grupos empresariales como Repsol de España  que tomaron posesión de los recursos.<br>
+Esto trajo  consecuencias económicas y sociales , especialmente en Plaza Huincul y Cutral Co, generando desempleo y malestar entre las personas damnificadas.
+"
       },
       {
-        "subtitulo": "Innovación y Sostenibilidad",
-        "texto": "Invertimos en tecnología para reducir el impacto ambiental y avanzar hacia un futuro sostenible."
-      },
-      {
-        "subtitulo": "Historia de YPF1",
-        "texto": "YPF fue fundada en 1922 y ha sido fundamental en el desarrollo energético de Argentina."
-      },
-      {
-        "subtitulo": "Nuestro Negocio2",
-        "texto": "Comprometidos con la exploración, producción y distribución de energía sostenible."
-      },
-      {
-        "subtitulo": "Innovación y Sostenibilidad3",
-        "texto": "Invertimos en tecnología para reducir el impacto ambiental y avanzar hacia un futuro sostenible."
-      },
-      {
-        "subtitulo": "wos",
-        "texto": "Invertimos en tecnología para reducir el impacto ambiental y avanzar hacia un futuro sostenible."
-      }
-    
-    
-    
-    
-    
-    
-    ]
-  }
-  
+        "subtitulo": "Re_ Estatizacion de YPF",
+        "texto": "En el año 2012, la empresa pasó a ser en su mayoría accionaria Estatal( 51% del capital accionario volvió a manos del Estado Argentino) logrando tener el control nuevamente de los recursos energéticos."
+      }
