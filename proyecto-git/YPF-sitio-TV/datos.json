@@ -1,0 +1,16 @@
+{
+  "informacion": [
+    {
+      "subtitulo": "Historia de YPF",
+      "texto": "El presidente de la Nación, José Figueroa Alcorta, decretó la posesión del yacimiento por parte del Estado, y se crearon la Dirección General de Explotación de Comodoro Rivadavia en 1911 y en 1922 la Dirección General de Yacimientos Petrolíferos Fiscales.<br>A través de YPF, el Estado impulsó el desarrollo de las actividades productivas y el hallazgo del 90% de las reservas de gas y petróleo en nuestro territorio."
+    },
+    {
+      "subtitulo": "Privatización de YPF",
+      "texto": "En 1989, bajo la Ley de Reforma del Estado, se privatizaron las empresas públicas del Estado Argentino.<br>Con la privatización de YPF, la empresa quedó en manos de grupos empresariales como Repsol de España, que tomaron posesión de los recursos.<br>Esto trajo consecuencias económicas y sociales, especialmente en Plaza Huincul y Cutral Co, generando desempleo y malestar entre las personas damnificadas."
+    },
+    {
+      "subtitulo": "Reestatización de YPF",
+      "texto": "En el año 2012, la empresa pasó a ser en su mayoría accionaria estatal (51% del capital accionario volvió a manos del Estado Argentino), logrando tener el control nuevamente de los recursos energéticos."
+    }
+  ]
+}
