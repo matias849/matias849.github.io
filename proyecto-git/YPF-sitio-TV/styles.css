@@ -2,10 +2,10 @@
 body {
     font-family: 'Arial', sans-serif;
 overflow: -moz-scrollbars-none;  /* Firefox */
-    -ms-overflow-style: none;        /* IE y Edge
+    -ms-overflow-style: none;       
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #004080, #0099cc);/* Esto será inicial pero cambiará al hacer scroll */
+    background: linear-gradient(135deg, #004080, #0099cc);
     background-attachment: fixed;
     background-size: cover;
     color: white;
