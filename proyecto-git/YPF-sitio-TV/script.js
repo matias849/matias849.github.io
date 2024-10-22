@@ -100,19 +100,57 @@ $(document).ready(function() {
     });
 });
 
-    $(document).ready(function(){
-        // Forzar el inicio desde la parte superior al cargar la página
-        $(window).scrollTop(0);
+$(document).ready(function() {
+    // Forzar el inicio desde la parte superior al cargar la página
+    $(window).scrollTop(0);
 
-        function scrollDown() {
-            // Scroll lento hacia abajo (5000 ms)
-            $('html, body').animate({
-                scrollTop: $(document).height() - $(window).height()
-            }, 11000, function() {
-                // Scroll rápido hacia arriba (1000 ms)
-                $('html, body').animate({scrollTop: 0}, 1000, scrollDown);
-            });
-        }
+    // Variables de control
+    let isScrollingDown = true; // Comienza hacia abajo
+    let scrollSpeedDown = 1;    // Velocidad de scroll hacia abajo (ajustado para hacerlo más lento)
+    let scrollSpeedUp = 10;     // Velocidad de scroll hacia arriba
+    let delayAtTarget = 6000;   // 6 segundos de pausa en el target
+    let delayAtTop = 500;      // 1 segundos de pausa en la parte superior
+    let scrollInterval;         // Guardar el intervalo de scroll
 
-        scrollDown(); // Iniciar el bucle
-    });
+    // Función para iniciar el scroll hacia abajo
+    function startScrollingDown() {
+        scrollInterval = setInterval(function() {
+            let scrollTop = $(window).scrollTop(); // Posición actual del scroll
+            let targetPosition = $('#target').offset().top; // Posición del ID objetivo
+
+            // Si estamos bajando
+            if (isScrollingDown) {
+                $(window).scrollTop(scrollTop + scrollSpeedDown);
+
+                // Si hemos llegado al target, detener el scroll por unos segundos
+                if (scrollTop >= targetPosition - $(window).height()) {
+                    clearInterval(scrollInterval); // Detener el scroll
+                    isScrollingDown = false;      // Cambiar la dirección
+                    setTimeout(startScrollingUp, delayAtTarget); // Esperar en el target
+                }
+            }
+        }, 20); // Intervalo de actualización para el scroll hacia abajo
+    }
+
+    // Función para iniciar el scroll hacia arriba
+    function startScrollingUp() {
+        scrollInterval = setInterval(function() {
+            let scrollTop = $(window).scrollTop(); // Posición actual del scroll
+
+            // Si estamos subiendo
+            $(window).scrollTop(scrollTop - scrollSpeedUp);
+
+            // Si hemos llegado a la parte superior, cambiar la dirección
+            if (scrollTop <= 0) {
+                clearInterval(scrollInterval); // Detener el scroll hacia arriba
+                isScrollingDown = true;       // Cambiar la dirección
+                
+                // Esperar 2 segundos en la parte superior antes de volver a bajar
+                setTimeout(startScrollingDown, delayAtTop);
+            }
+        }, 20); // Intervalo de actualización para el scroll hacia arriba
+    }
+
+    // Iniciar el ciclo de scroll
+    startScrollingDown();
+});
