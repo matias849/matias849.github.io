@@ -1,7 +1,8 @@
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    overflow-y: hidden;
+overflow: -moz-scrollbars-none;  /* Firefox */
+    -ms-overflow-style: none;        /* IE y Edge
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #004080, #0099cc);/* Esto será inicial pero cambiará al hacer scroll */
@@ -10,6 +11,10 @@ body {
     color: white;
     scroll-behavior: smooth;
     transition: background-color 1s ease; /* Para suavizar la transición */
+}
+
+body::-webkit-scrollbar {
+    display: none;                   /* Chrome, Safari y Opera */
 }
 
 header {
