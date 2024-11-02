@@ -1,0 +1,20 @@
+body{margin:0;
+padding: 0;}
+h1 {background-color: rgb(102, 78, 238);
+    color: #4CAF50;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+section {background-color: red;
+margin: 20px 10px;
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content:space-around;
+gap: 50px;
+padding: 10px;}
+
+section div{width: 250px;
+height: 300px;
+background-color: aqua;}
