@@ -12,9 +12,114 @@ display: flex;
 flex-direction:row;
 flex-wrap: wrap;
 justify-content:space-around;
-gap: 50px;
+column-gap: 15px;
+row-gap: 30px;
 padding: 10px;}
 
 section div{width: 250px;
-height: 300px;
-background-color: aqua;}
+height: 350px;
+background-color: aqua;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: column;
+padding: 5px;
+border-radius: 10px;
+border:1.5px black solid;
+}
+
+section div img{width: 230px;
+    height: 190px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: 0px
+}
+
+  section div h3{margin: 0px;
+    text-align: center;}
+
+section div ul {list-style: none;
+    padding:0;
+    margin-left: 20px;
+}
+section div ul li{font-size: 16px;}
+
+section button{height: 30px;
+font-size: 18px;
+border-radius: 10px;
+transition: 0.5s;}
+
+section button:hover{background-color: rgba(75, 75, 219, 0.904);
+transition: 0.5s;}
+
+#message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    visibility: hidden; /* Oculto por defecto */
+}
+
+#message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.message-content {
+    background-color: white; /* Fondo blanco para el mensaje */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+
+
+
+@media (max-width: 578px)
+{section div{width: 200px;
+height: 295px;}
+section {column-gap: 10px;
+    row-gap: 15px;}
+section div img{width:180px;
+    height: 135px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: 0px
+}
+}
+
+@media (max-width: 469px)
+{section div{width: 280px;
+height: 370px;}
+section div img{width:260px;
+    height: 210px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: 0px
+}
+}

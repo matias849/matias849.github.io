@@ -1,0 +1,39 @@
+{
+  "nannies": [
+    {
+      "nombre": "Isabel Herrera",
+      "precio": 16,
+      "idioma": "Español, Italiano",
+      "disponibilidad": "Lunes a Viernes",
+      "img": "src/imagen1.jpeg"
+    },
+    {
+      "nombre": "Carmen Silva",
+      "precio": 22,
+      "idioma": "Español",
+      "disponibilidad": "Fines de semana",
+      "img": "src/imagen2.jpg"
+    },
+    {
+      "nombre": "Sara Jiménez",
+      "precio": 19,
+      "idioma": "Español, Alemán",
+      "disponibilidad": "Tiempo completo",
+      "img": "src/imagen3.jpg"
+    },
+    {
+      "nombre": "Paula Navarro",
+      "precio": 26,
+      "idioma": "Español",
+      "disponibilidad": "Noches",
+      "img": "src/imagen4.webp"
+    },
+    {
+      "nombre": "Gloria Castro",
+      "precio": 32,
+      "idioma": "Español, Inglés",
+      "disponibilidad": "Fines de semana y noches",
+      "img": "src/imagen5.jpg"
+    }
+  ]
+}
