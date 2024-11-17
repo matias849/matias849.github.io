@@ -103,6 +103,7 @@
           "titulo": "El diario de Ana Frank",
           "autor": "Ana Frank",
           "fecha_publicacion": "1947",
+          "descripcion": "El diario de una niña judía que se esconde con su familia durante la ocupación nazi en los Países Bajos, describiendo sus experiencias y pensamientos.",
           "portada": "autobiografia/el diario de ana frank.jpg",
           "pdf": "autobiografia/el diario de ana frank.pdf"
         },
