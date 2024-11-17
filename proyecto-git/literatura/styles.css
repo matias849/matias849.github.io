@@ -21,6 +21,7 @@ top: -5px;}
 .menu {background-color: #b41f1f;
     position:sticky;
 top:0;
+z-index: 10;
 }
 .menu ul{padding: 0;
     margin: 0;
@@ -44,6 +45,57 @@ text-align: center;}
     color: #dee04b;
     transition: 1s;
 }
+
+.carousel {
+  position: relative;
+  max-width: 75%;
+  margin: 10px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: opacity 0s ease-in-out;
+  outline: #000000 2px solid;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%; /* Se ajusta al ancho del carrusel */
+  height: 465px; /* Fija la altura de las imágenes */
+  object-fit: cover; /* Ajusta la imagen sin distorsión */
+  }
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .iframe{display: flex;
 justify-content: center;}
 
@@ -117,6 +169,16 @@ color: #0a0368;}
     text-decoration: none;
   }
   
+  footer {
+    background-color: #3b3b3b; /* Color de fondo */
+    color: #ad9956; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+    margin-top: 100px;
+}
+footer a{color: #93d2e5;
+text-decoration: none;}
+
   
   /* Estilos para pantallas pequeñas (móviles) */
   @media (max-width: 768px) {
@@ -141,9 +203,29 @@ color: #0a0368;}
   
 .section h2{text-align: center;}
 
-@media (max-width: 563px) {
+@media (max-width: 565px) {
 .menu ul {column-gap: 50px;
 }
+.carousel {
+  max-width: 100%;
+  margin: 1px auto;
+  border-radius: 0px;
+  outline: #000000 2px solid;
+  }
+  .carousel-item {
+    min-width: 100%;
+    transition: opacity 0s ease-in-out;
+    outline: #000000 2px solid;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    display: block;
+    width: 100%; /* Se ajusta al ancho del carrusel */
+    height: 400px; /* Fija la altura de las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+    }
+  
 }
 
 @media (max-width: 453px) {
