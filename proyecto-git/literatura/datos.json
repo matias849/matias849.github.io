@@ -1,0 +1,120 @@
+{
+    "libros": {
+      "romance": [
+        {
+          "titulo": "Cumbres Borrascosas",
+          "autor": "Emily Brontë",
+          "fecha_publicacion": "1847",
+          "descripcion": "Un romance gótico trágico que cuenta la relación apasionada entre Heathcliff y Catherine Earnshaw, marcado por el amor, la venganza y la desesperación en los páramos ingleses.",
+          "portada": "romance/cumbres-borrascosas.jpeg",
+          "pdf": "romance/cumbres-borrascosas.pdf"
+        },
+        {
+          "titulo": "Orgullo y Prejuicio",
+          "autor": "Jane Austen",
+          "fecha_publicacion": "1813",
+          "descripcion": "La historia de Elizabeth Bennet y el señor Darcy, dos personajes que deben superar su orgullo y prejuicios para poder encontrar el amor verdadero, enmarcada en una crítica social sobre el matrimonio en la Inglaterra del siglo XIX.",
+          "portada": "romance/orgullo-y-prejuicio.webp",
+          "pdf": "romance/orgullo-y-prejuicio.pdf"
+        },
+        {
+          "titulo": "Persuasión",
+          "autor": "Jane Austen",
+          "fecha_publicacion": "1817",
+          "descripcion": "Anne Elliot, una joven mujer que, años después de rechazar a su amor verdadero por la presión social, se encuentra con él nuevamente, solo para descubrir que sus sentimientos siguen intactos.",
+          "portada": "romance/persuasion.webp",
+          "pdf": "romance/persuasion.pdf"
+        }
+      ],
+      "policiaco": [
+        {
+          "titulo": "El halcón maltés",
+          "autor": "Dashiell Hammett",
+          "fecha_publicacion": "1931",
+          "descripcion": "Un detective privado, Sam Spade, se ve envuelto en un caso de engaños, asesinatos y misterios relacionados con una valiosa figura de halcón.",
+          "portada": "policiaco/el halcon maltes.jpg",
+          "pdf": "policiaco/el halcon maltes.pdf"
+        },
+        {
+          "titulo": "Asesinato en el Orient Express",
+          "autor": "Agatha Christie",
+          "fecha_publicacion": "1934",
+          "descripcion": "Hercule Poirot investiga un asesinato a bordo del lujoso tren Orient Express, donde todos los pasajeros parecen ser sospechosos.",
+          "portada": "policiaco/asesinato en el orient express.jpg",
+          "pdf": "policiaco/asesinato en el orient express.pdf"
+        }
+      ],
+      "fantasia": [
+        {
+          "titulo": "El hobbit",
+          "autor": "J.R.R. Tolkien",
+          "fecha_publicacion": "1937",
+          "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura épica para recuperar un tesoro robado, enfrentándose a dragones y orcos.",
+          "portada": "fantasia/el hobbit.png",
+          "pdf": "fantasia/el hobbit.pdf"
+        },
+        {
+          "titulo": "Harry Potter y la piedra filosofal",
+          "autor": "J.K. Rowling",
+          "fecha_publicacion": "1997",
+          "descripcion": "Harry Potter descubre que es un mago y se embarca en su primer año en la escuela de magia Hogwarts, enfrentándose a fuerzas oscuras.",
+          "portada": "fantasia/harry potter y la piedra filosofal.jpg",
+          "pdf": "https://fecolsa.com.co/upload/Actividades%20Equilibrio%20Total/Rowling,%20J.%20K.%20-%20%20Harry%20Potter%20y%20la%20piedra%20filosofal.pdf"
+        }
+      ],
+      "terror": [
+        {
+          "titulo": "Drácula",
+          "autor": "Bram Stoker",
+          "fecha_publicacion": "1897",
+          "descripcion": "El clásico cuento de terror gótico sobre el conde Drácula, quien viaja de Transilvania a Inglaterra en busca de nuevas víctimas.",
+          "portada": "terror/dracula.jpg",
+          "pdf": "terror/Dracula.pdf"
+        },
+        {
+          "titulo": "El resplandor",
+          "autor": "Stephen King",
+          "fecha_publicacion": "1977",
+          "descripcion": "Jack Torrance y su familia se trasladan a un hotel aislado donde, bajo la influencia de fuerzas sobrenaturales, Jack se ve consumido por la locura.",
+          "portada": "terror/el resplandor.jpg",
+          "pdf": "terror/el resplandor.pdf"
+        }
+      ],
+      "futurismo": [
+        {
+          "titulo": "1984",
+          "autor": "George Orwell",
+          "fecha_publicacion": "1949",
+          "descripcion": "Una sociedad totalitaria donde el gobierno controla todos los aspectos de la vida de las personas, y un hombre lucha por encontrar la libertad en un mundo de vigilancia constante.",
+          "portada": "futurismo/1984.webp",
+          "pdf": "futurismo/1984.pdf"
+        },
+        {
+          "titulo": "Fahrenheit 451",
+          "autor": "Ray Bradbury",
+          "fecha_publicacion": "1953",
+          "descripcion": "En un futuro distópico, los libros están prohibidos, y un bombero es encargado de quemarlos hasta que descubre el valor de la lectura.",
+          "portada": "futurismo/fahrenheit 451.jpeg",
+          "pdf": "futurismo/fahrenheit 451.pdf"
+        }
+      ],
+      "autobiografia": [
+        {
+          "titulo": "El diario de Ana Frank",
+          "autor": "Ana Frank",
+          "fecha_publicacion": "1947",
+          "portada": "autobiografia/el diario de ana frank.jpg",
+          "pdf": "autobiografia/el diario de ana frank.pdf"
+        },
+        {
+          "titulo": "Yo soy Malala",
+          "autor": "Malala Yousafzai",
+          "fecha_publicacion": "2013",
+          "descripcion": "La autobiografía de Malala Yousafzai, la joven activista pakistaní que luchó por la educación de las niñas y sobrevivió a un ataque talibán.",
+          "portada": "autobiografia/yo soy malala.jpeg",
+          "pdf": "autobiografia/yo soy malala.pdf"
+        }
+      ]
+    }
+  }
+  
