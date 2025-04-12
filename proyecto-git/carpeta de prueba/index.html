@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>calculadora</title>
+</head>
+<body class="bg-red-100">
+    <h1 class="text-center text-5xl pt-[10px]">Calculadora</h1>
+    <div class="flex justify-center items-center h-screen bg-red-100">
+        
+            <div class="bg-gray-600 w-64 h-auto p-4 flex-wrap flex justify-between rounded-lg shadow-lg">
+            <input type="text" class="w-full h-10 text-center mb-4" placeholder="info aca" id="display" disabled>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('1')">1</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('2')">2</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('3')">3</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('+')">+</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('4')">4</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('5')">5</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('6')">6</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('-')">-</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('7')">7</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('8')">8</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('9')">9</button>
+            <button class="bg-gray-800 text-white w-12 h-10 mb-2" onclick="appendToDisplay('*')">*</button>
+            <button class="bg-gray-800 text-white w-12 h-10" onclick="appendToDisplay('0')">0</button>
+            <button class="bg-gray-800 text-white w-12 h-10" onclick="calculate()">=</button>
+            <button class="bg-gray-800 text-white w-12 h-10" onclick="appendToDisplay('/')">/</button>
+            <button class="bg-gray-800 text-white w-12 h-10" onclick="clearDisplay()">C</button>
+            
+        </div>
+
+
+
+    </div>
+    <script>
+        function appendToDisplay(entrada) {
+            document.getElementById('display').value += entrada;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function calculate() {
+            const display = document.getElementById('display');
+            try {
+                display.value = eval(display.value);
+            } catch (error) {
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
