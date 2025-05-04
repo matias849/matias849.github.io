@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- TailwindCSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <title>Invitación de 15</title>
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .nombre {
+      font-family: 'Great Vibes', cursive;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-purple-200 min-h-screen">
+<div class="bg-rose-300 w-full h-auto" data-aos="fade" data-aos-delay="300">
+  <h1 class="text-center text-5xl p-2 nombre">Agus</h1>
+  <hr class="border-2 border-rose-700 w-1/2 mx-auto" />
+  <h2 class="text-center text-5xl p-2 nombre">15 Años</h2>
+</div>
+<h3 class="text-center text-2xl p-2" data-aos="fade-up" data-aos-delay="300">Te Esperamos</h3>
+<div id="map" class="w-full h-96"></div>
+<br>
+
+
+
+
+ <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    // Crear el mapa
+    var map = L.map('map').setView([-34.6037, -58.3816], 13); // Coordenadas de Buenos Aires
+  
+    // Agregar los tiles
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png', {
+  subdomains: 'abcd',
+  maxZoom: 20
+}).addTo(map);
+
+L.rectangle([[90, -180], [-90, 180]], {
+  color: "#ffffff", // rosa
+  fillColor: "#ff69b4", // rosa
+  fillOpacity: 0.50 // controlás la intensidad del color
+}).addTo(map);
+
+
+
+
+  
+    // Agregar un marcador
+    L.marker([-34.6037, -58.3816]).addTo(map)
+      .bindPopup('¡Aquí es la fiesta!')
+      .openPopup();
+  </script>
+  
+</body>
+</html>
