@@ -19,7 +19,7 @@
     
     <p id="resultado" class="mt-4 text-center text-gray-700 font-medium"></p>
     
-    
+    <p id="error" class="mt-2 text-sm text-red-500 text-center hidden"></p>
   </div>
 
   <script>
@@ -30,6 +30,12 @@
       // window.location.href = decodedText;
     }
 
+    function onScanError(errorMessage) {
+      // Mostrar error una sola vez
+      const errElem = document.getElementById("error");
+      errElem.innerText = "Error al leer QR, intentá de nuevo.";
+      errElem.classList.remove("hidden");
+    }
 
     const html5QrCode = new Html5Qrcode("reader");
     html5QrCode.start(
