@@ -33,7 +33,7 @@
     function onScanError(errorMessage) {
       // Mostrar error una sola vez
       const errElem = document.getElementById("error");
-      errElem.innerText = "Error al leer QR, intentá de nuevo.";
+      
       errElem.classList.remove("hidden");
     }
 
@@ -42,7 +42,7 @@
       { facingMode: "environment" },
       {
         fps: 10,
-        qrbox: { width: 350, height: 450 },
+        qrbox: { width: 350, height: 400 },
         disableFlip: true
       },
       onScanSuccess,
