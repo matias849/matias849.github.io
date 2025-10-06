@@ -6,7 +6,7 @@
   <title>Portafolio — Mis proyectos</title>
   <style>
     :root{
-      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --highlight:#f59e0b; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
       --radius:14px; --gap:18px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     }
     *{box-sizing:border-box}
@@ -31,9 +31,17 @@
     .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
     .links a{padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--accent);font-weight:600;border:1px solid rgba(6,182,212,0.08)}
 
+    .featured{
+      border:1px solid var(--highlight);
+      background:linear-gradient(180deg,rgba(255,183,0,0.05),rgba(255,255,255,0.01));
+      box-shadow:0 0 24px rgba(245,158,11,0.25);
+      transform:scale(1.02);
+    }
+    .featured h3{color:var(--highlight)}
+    .featured .links a{background:rgba(245,158,11,0.1);color:var(--highlight);border-color:rgba(245,158,11,0.3)}
+
     footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
 
-    /* responsive tweaks */
     @media (max-width:520px){.brand{gap:10px}.logo{width:44px;height:44px;font-size:15px}.wrap{padding:18px}}
   </style>
 </head>
@@ -59,7 +67,15 @@
     <main>
       <section class="grid" id="grid">
 
-        <!-- Card template: mantuve tus enlaces originales -->
+        <!-- Proyecto destacado -->
+        <article class="card featured" data-tags="web">
+          <div>
+            <h3>Invitaciones FS</h3>
+            <p>Proyecto más importante: sitio web profesional para invitaciones digitales personalizadas.</p>
+          </div>
+          <div class="links"><a href="https://invitacionesfs.com" target="_blank">Visitar sitio</a></div>
+        </article>
+
         <article class="card" data-tags="web">
           <div>
             <h3>YPF</h3>
@@ -119,7 +135,7 @@
         <article class="card" data-tags="tests">
           <div>
             <h3>Calculadora</h3>
-            <p>Haciendo una Calculadora con html ,css y js</p>
+            <p>Haciendo una Calculadora con html, css y js.</p>
           </div>
           <div class="links"><a href="proyecto-git/carpeta de prueba/index.html" target="_blank">Abrir</a></div>
         </article>
@@ -151,7 +167,7 @@
       </section>
 
       <footer>
-        <p>Diseñado por Matias</span></p>
+        <p>Diseñado por Matias — proyecto destacado: Invitaciones FS</p>
       </footer>
     </main>
   </div>
@@ -160,17 +176,12 @@
     const grid = document.getElementById('grid');
     const cards = Array.from(document.querySelectorAll('.card'));
     const q = document.getElementById('q');
-    const countEl = document.getElementById('count');
-
-    function updateCount(){ countEl.textContent = cards.filter(c=>!c.classList.contains('hidden')).length }
-    updateCount();
 
     function filter(tag){
       cards.forEach(c=>{
         const tags = c.dataset.tags.split(' ');
         if(tag==='all' || tags.includes(tag)) c.classList.remove('hidden'); else c.classList.add('hidden');
       })
-      updateCount();
     }
 
     q.addEventListener('input', e=>{
@@ -179,7 +190,6 @@
         const text = (c.innerText||'').toLowerCase();
         if(!val || text.includes(val)) c.classList.remove('hidden'); else c.classList.add('hidden');
       })
-      updateCount();
     })
   </script>
 </body>
